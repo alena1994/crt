@@ -1,7 +1,7 @@
 <?php
 
 use yii\db\Migration;
-
+//
 class m160928_144132_projects_table extends Migration
 {
     public function up()
