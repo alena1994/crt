@@ -14,6 +14,11 @@ class m160928_144132_projects_table extends Migration
             ], 'ENGINE=InnoDb DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT \'Таблица cо списком проектов\'');
 
         $this->createIndex('name_index', 'projects', 'name');
+        $this->addforeingKey('FK_projects_category',
+                            'projects',
+                            'category',
+                            'category',
+                            'name');
     }
 
     public function down()

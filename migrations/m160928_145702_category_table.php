@@ -13,6 +13,7 @@ class m160928_145702_category_table extends Migration
             ], 'ENGINE=InnoDb DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT \'Таблица c категориями пользователей\'');
 
         $this->createIndex('name_index', 'category', 'name');
+        
     }
 
     public function down()
